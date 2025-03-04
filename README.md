@@ -14,7 +14,3 @@ UI/UX Design:
 Practice UI/UX design using Figma.
 
 Enhance your design skills and create user-friendly interfaces.
-
-Become a Better Programmer:
-
-Explore new features and tools to help you grow as a programmer.
