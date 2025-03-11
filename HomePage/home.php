@@ -11,7 +11,6 @@ if (!$con) {
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
     $name = trim(mysqli_real_escape_string($con, $_POST['name']));
     $email = trim(mysqli_real_escape_string($con, $_POST['email']));
     $message = trim(mysqli_real_escape_string($con, $_POST['message']));
