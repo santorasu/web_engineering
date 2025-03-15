@@ -9,8 +9,4 @@ Solve coding challenges using the Data programming language.
 
 Practice and improve your programming skills.
 
-UI/UX Design:
-
-Practice UI/UX design using Figma.
-
 Enhance your design skills and create user-friendly interfaces.
