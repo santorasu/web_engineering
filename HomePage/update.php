@@ -1,17 +1,19 @@
 <?php
-include 'home.php';
 
-$username = $_POST['name'];
-$email = $_POST['email'];
-$message = $_POST['message'];
+    include 'connection.php';
 
-$sql = "UPDATE userinfo SET name = '$username', message = '$message' WHERE email = '$email'";
+    $email = $_POST['uemail'];
+    $new_name = $_POST['uname'];
+    $new_message = $_POST['umsg'];
 
-$run = mysqli_query($con, $sql);
+    $sql = "UPDATE users SET name = '$new_name', message = '$new_message' WHERE email = '$email'";
 
-if (!$run) {
-    echo "Update failed!";
-} else {
-    header('Location: list.php');
-}
+    $run = mysqli_query($con, $sql);
+
+    if(!$run){
+        echo 'Update failed!';
+    } else{
+        header("Location: list.php");
+        exit();
+    }
 ?>
