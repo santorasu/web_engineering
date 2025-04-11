@@ -1,14 +1,17 @@
 <?php
-include 'home.php';
-$val = $_POST['del'];
-$sql = "DELETE FROM userinfo WHERE email = '$val'";
 
-$run = mysqli_query($con, $sql);
+    include 'connection.php';
 
-if(!$run){
-    echo " deletion failed!";
-} else {
-    header('Location: list.php');
+    $val = $_POST['del'];
 
-}
+    $sql = "DELETE FROM users WHERE email = '$val'";
+
+    $run = mysqli_query($con, $sql);
+
+    if(!$run){
+        echo 'Deletion failed!';
+    } else{
+        header("Location: list.php");
+        exit();
+    }
 ?>
